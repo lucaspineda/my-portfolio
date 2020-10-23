@@ -11,3 +11,8 @@ body {
 html {
     font-size: 10px !important;
 }
+
+:root {
+    --primary-color: #0c243c;
+    --secondary-color: #EBF2FA;
+}
