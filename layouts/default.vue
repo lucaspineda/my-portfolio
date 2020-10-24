@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-900 teste">
+  <div>
     <nav class="flex items-center relative">
       <div class="flex items-center justify-center rounded-full text-white name-avatar">LP</div>
       <div class="nav-icons flex items-center">
@@ -20,16 +20,17 @@
 <style scoped>
 
 .teste {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 
 nav {
-  background-color: var(--secondary-color);;
+  background-color: var(--secondary-color);
   padding: 1rem;
 }
 
 .name-avatar {
   font-size: 1.6rem;
+  font-family: var(--body-font-family);
   width: 4rem;
   height: 4rem;
   background-color: var(--primary-color);

@@ -9,6 +9,7 @@
 
 body {
     font-size: 10px !important;
+    font-family: var(--body-font-family: 'Roboto', sans-serif;);
 }
 
 html {
