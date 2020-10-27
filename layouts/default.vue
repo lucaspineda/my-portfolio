@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex items-center relative">
+    <nav class="flex items-center fixed w-full">
       <div class="flex items-center justify-center rounded-full text-white name-avatar">LP</div>
       <div class="nav-icons flex items-center">
         <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
