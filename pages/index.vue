@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <HomeSection />
+    <MyProjects />
   </div>
 </template>
 
@@ -10,6 +11,7 @@ import { Vue, Component } from 'vue-property-decorator';
 @Component({
   components: {
     HomeSection: () => import('@/components/aboutMe/index.vue'),
+    MyProjects: () => import('@/components/myProjects/index.vue'),
   }
 })
 
@@ -26,6 +28,7 @@ export default class mainPage extends Vue {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
   background-color: var(--primary-color);
 }
 </style>

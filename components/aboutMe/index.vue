@@ -1,5 +1,5 @@
 <template>
-  <section class="home-section flex-col text-left">
+  <div class="home-section flex-col text-left">
     <h1>Hi! I'm Lucas Pineda.
       <br>
       I'm a Front End Developer.
@@ -18,11 +18,13 @@
         Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { Vue } from 'vue-property-decorator';
+
+export default class aboutMe extends Vue {
 
 }
 </script>
