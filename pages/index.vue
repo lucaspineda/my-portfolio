@@ -6,12 +6,12 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
   components: {
     HomeSection: () => import('@/components/aboutMe/index.vue'),
-    MyProjects: () => import('@/components/myProjects/index.vue'),
+    MyProjects: () => import('@/components/myProjects/index.vue')
   }
 })
 

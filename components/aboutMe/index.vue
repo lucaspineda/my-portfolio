@@ -1,6 +1,7 @@
 <template>
   <div class="home-section flex-col text-left">
-    <h1>Hi! I'm Lucas Pineda.
+    <h1>
+      Hi! I'm Lucas Pineda.
       <br>
       I'm a Front End Developer.
     </h1>
@@ -22,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-property-decorator';
+import { Vue } from 'vue-property-decorator'
 
 export default class aboutMe extends Vue {
 
