@@ -5,27 +5,39 @@
         My Projects
       </h2>
     </div>
-    <section class="cards-section flex">
-      <div href="#" class="projects-card flex flex-col mb-10">
-        <img class="projects-card__project-image" src="@/assets/img/trade.jpeg" alt="Stock Trader Project">
+    <section class="cards-section flex flex-col">
+      <div v-for="(project, index) in projects" :key="index" class="projects-card flex flex-col mb-10" href="#">
+        <img class="projects-card__project-image" :src="require(`@/assets/img/${project.image}`)" :alt="`${project.title} image`">
         <div class="projects-card__separator" />
-        <div class="project-info flex flex-col">
-          <h4>Stock Trader</h4>
+        <div class="project-info flex flex-col h-full">
+          <h4>{{ project.title }}</h4>
           <p class="project-description">
-            Just a normal  project with vuejs and firebase
+            {{ project.description }}
           </p>
           <div class="tags-area flex justify-center">
-            <span>Vuejs</span>
-            <span>Firebase</span>
-            <span>Firebase</span>
-            <span>Firebase</span>
-            <span>Firebase</span>
-            <span>Firebase</span>
-            <span>Firebase</span>
+            <span v-for="(tag, tagIndex) in project.tags" :key="tagIndex">
+              {{ tag }}
+            </span>
           </div>
-          <div class="links-area">
-            <a>View code</a>
-            <a>View live demo</a>
+          <div class="links-area flex justify-center h-full items-end mb-10">
+            <a href="#" class="flex rounded-lg">
+              <div>
+                <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <span>
+                View code
+              </span>
+            </a>
+            <a href="#" class="flex rounded-lg">
+              <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>
+                View live
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -33,18 +45,34 @@
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+import { Project } from '@/types/types'
 
+@Component
+export default class MyProjects extends Vue {
+  projects: Project[] = []
+
+  getImage (path: any) {
+    return require(path)
+  }
+
+  created () {
+    this.$axios('projects.json')
+      .then((value) => {
+        this.projects = value.data
+        console.log(typeof this.projects[0].image)
+        console.log(typeof '@/assets/img/icon.png')
+      })
+  }
 }
 </script>
 
 <style>
 .my-work-section {
-  padding: 0 2.2rem;
+  padding: 0 1rem 2rem 1rem;
   background-color: #7798ab;
   color: var(--secondary-color);
-  padding: 0 2.2rem;
 }
 
 .title-section-area {
@@ -68,14 +96,14 @@ export default {
 .projects-card {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  height: 48rem;
+  height: 52rem;
   border-radius: 1rem;
 }
 
 .projects-card__project-image {
   /* height: 100%; */
   width: auto;
-  height: 26em;
+  height: 26rem;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -85,6 +113,7 @@ export default {
 
 .project-info {
   margin: 2rem 0 0 0;
+  padding: 0 1rem;
 }
 
 .project-info h4 {
@@ -105,8 +134,17 @@ export default {
   background-color: var(--quartenary-color);
   font-size: 1.4rem;
   padding: .4rem .8rem;
-  margin: 0 .4rem;
+  margin: .4rem .4rem;
   border-radius: 2rem;
+}
+
+.links-area a {
+  font-size: 1.4rem;
+  margin: 0 .8rem;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 </style>
