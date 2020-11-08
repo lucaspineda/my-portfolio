@@ -6,7 +6,7 @@
       </h2>
     </div>
     <section class="cards-section flex flex-col">
-      <div v-for="(project, index) in projects" :key="index" class="projects-card flex flex-col mb-10" href="#">
+      <div v-for="(project, index) in projects" :key="index" class="projects-card flex flex-col" href="#">
         <img class="projects-card__project-image" :src="require(`@/assets/img/${project.image}`)" :alt="`${project.title} image`">
         <div class="projects-card__separator" />
         <div class="project-info flex flex-col h-full">
@@ -61,8 +61,6 @@ export default class MyProjects extends Vue {
     this.$axios('projects.json')
       .then((value) => {
         this.projects = value.data
-        console.log(typeof this.projects[0].image)
-        console.log(typeof '@/assets/img/icon.png')
       })
   }
 }
@@ -98,6 +96,7 @@ export default class MyProjects extends Vue {
   color: var(--primary-color);
   height: 52rem;
   border-radius: 1rem;
+  margin: 0 0 3rem 0;
 }
 
 .projects-card__project-image {
