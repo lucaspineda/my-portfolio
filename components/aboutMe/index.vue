@@ -5,7 +5,7 @@
       <br>
       I'm a Front End Developer.
     </h1>
-    <div class="home-section__body-content">
+    <section class="home-section__body-content">
       <p>
         I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
       </p>
@@ -18,7 +18,15 @@
       <p class="mt-8">
         Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
       </p>
-    </div>
+      <div class="checkout-my-work btn flex mx-auto">
+        <span>
+          My Work
+        </span>
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -45,5 +53,18 @@ export default class aboutMe extends Vue {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: var(--body-font-family);
+}
+
+.checkout-my-work.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--titles-font-family);
+  margin: 3rem auto 4rem auto;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.checkout-my-work.btn span {
+  margin-right: 1rem;
 }
 </style>
