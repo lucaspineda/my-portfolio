@@ -58,7 +58,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: baseUrlFunction(),
+    baseURL: baseUrlFunction()
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
