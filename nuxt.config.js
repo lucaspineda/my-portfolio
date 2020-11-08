@@ -1,3 +1,12 @@
+const baseUrlFunction = () => {
+  if (process.env.BUILD_MODE === 'dev') {
+    return '//localhost:3000'
+  }
+  if (process.env.BUILD_MODE === 'prod') {
+    return 'https://my-portfolio-beta-rose.vercel.app'
+  }
+}
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -21,7 +30,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~assets/styles/global.css',
+    '~assets/styles/global.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -48,11 +57,13 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: baseUrlFunction(),
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extend(config, { isDev, isClient }) {
+    extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
