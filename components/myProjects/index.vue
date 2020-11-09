@@ -66,10 +66,10 @@ export default class MyProjects extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 .my-work-section {
   padding: 0 1rem 2rem 1rem;
-  background-color: #7798ab;
+  background-color: var(--tertiary-color);
   color: var(--secondary-color);
 }
 
