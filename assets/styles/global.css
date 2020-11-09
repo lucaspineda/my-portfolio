@@ -16,6 +16,11 @@ body {
 html {
   font-size: 10px !important;
 }
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px !important;
+  }
+}
 
 :root {
   /* Colors */
