@@ -1,47 +1,49 @@
 <template>
-  <section class="my-work-section flex flex-col items-center justify-center">
-    <div class="title-section-area">
-      <h2 class="section-title">
-        My Projects
-      </h2>
-    </div>
-    <section class="cards-section flex flex-col">
-      <div v-for="(project, index) in projects" :key="index" class="projects-card flex flex-col" href="#">
-        <img class="projects-card__project-image" :src="require(`@/assets/img/${project.image}`)" :alt="`${project.title} image`">
-        <div class="projects-card__separator" />
-        <div class="project-info flex flex-col h-full">
-          <h4>{{ project.title }}</h4>
-          <p class="project-description">
-            {{ project.description }}
-          </p>
-          <div class="tags-area flex justify-center">
-            <span v-for="(tag, tagIndex) in project.tags" :key="tagIndex">
-              {{ tag }}
-            </span>
-          </div>
-          <div class="links-area flex justify-center h-full items-end mb-10">
-            <a href="#" class="flex rounded-lg">
-              <div>
+  <section id="my-projects" class="my-work-section flex flex-col items-center justify-center">
+    <div class="container flex flex-col mx-auto">
+      <div class="title-section-area">
+        <h2 class="section-title">
+          My Projects
+        </h2>
+      </div>
+      <section class="cards-section flex flex-col">
+        <div v-for="(project, index) in projects" :key="index" class="projects-card flex flex-col" href="#">
+          <img class="projects-card__project-image" :src="require(`@/assets/img/${project.image}`)" :alt="`${project.title} image`">
+          <div class="projects-card__separator" />
+          <div class="project-info flex flex-col h-full">
+            <h4>{{ project.title }}</h4>
+            <p class="project-description">
+              {{ project.description }}
+            </p>
+            <div class="tags-area flex justify-center">
+              <span v-for="(tag, tagIndex) in project.tags" :key="tagIndex">
+                {{ tag }}
+              </span>
+            </div>
+            <div class="links-area flex justify-center h-full items-end mb-10">
+              <a href="#" class="flex rounded-lg">
+                <div>
+                  <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <span>
+                  View code
+                </span>
+              </a>
+              <a href="#" class="flex rounded-lg">
                 <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-              </div>
-              <span>
-                View code
-              </span>
-            </a>
-            <a href="#" class="flex rounded-lg">
-              <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span>
-                View live
-              </span>
-            </a>
+                <span>
+                  View live
+                </span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </section>
 </template>
 

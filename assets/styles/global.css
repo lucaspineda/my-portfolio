@@ -16,6 +16,11 @@ body {
 html {
   font-size: 10px !important;
 }
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px !important;
+  }
+}
 
 :root {
   /* Colors */
@@ -24,6 +29,7 @@ html {
   --tertiary-color: #7798ab;
   --quartenary-color: #59ffa0;
   --quintenary-color: #c3dbc5;
+  --senary-color: #030A11;
 
   /* Typography */
   --titles-font-family: 'Domine', serif;

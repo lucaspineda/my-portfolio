@@ -11,9 +11,19 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
-  // router: {
-  //   base: ''
-  // },
+  router: {
+    // base: ''
+    // scrollBehavior (to) {
+    //   if (to.hash) {
+    //     return window.scrollTo({
+    //       top: 0,
+    //       behavior: 'smooth',
+    //       selector: ''
+    //     })
+    //   }
+    //   return window.scrollTo({ top: 0, behavior: 'smooth' })
+    // }
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {

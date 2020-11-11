@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-me-section flex flex-col items-center justify-center">
+  <section id="contact-me" class="contact-me-section flex flex-col items-center justify-center">
     <div class="title-section-area">
       <h2 class="section-title">
         Contact Me
@@ -7,6 +7,13 @@
     </div>
     <ContactImage />
     <div class="contacts-area flex flex-col">
+      <a class="contact-row flex items-center">
+        <i class="fab fa-github mr-4 w-10 flex justify-center" />
+        <!-- <i class="fab fa-github"></i> -->
+        <p>
+          /lucaspineda
+        </p>
+      </a>
       <a class="contact-row flex items-center">
         <i class="fas fa-mobile-alt mr-4 w-10 flex justify-center" />
         <p>
@@ -25,12 +32,12 @@
           @LucasPineda96
         </a>
       </a>
-      <a href="https://www.instagram.com/pineda_luucas/" target="_blank" class="contact-row flex items-center">
+      <!-- <a href="https://www.instagram.com/pineda_luucas/" target="_blank" class="contact-row flex items-center">
         <i class="fab fa-instagram mr-4 w-10 flex justify-center" />
         <a>
           pineda_luucas
         </a>
-      </a>
+      </a> -->
       <a href="https://www.linkedin.com/in/lucas-pineda/" target="_blank" class="contact-row flex items-center">
         <i class="fab fa-linkedin-in mr-4 w-10 flex justify-center" />
         <a>

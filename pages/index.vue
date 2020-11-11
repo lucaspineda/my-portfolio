@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="my-container flex">
     <HomeSection />
     <MyProjects />
     <ContactMe />
@@ -24,13 +24,20 @@ export default class mainPage extends Vue {
 
 <style>
 
-.container {
+.my-container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
+
+@media (min-width: 640px) {
+  .my-container {
+    padding-left: 20rem;
+  }
+}
+
 </style>
