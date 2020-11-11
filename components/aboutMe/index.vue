@@ -1,5 +1,5 @@
 <template>
-  <div class="home-section flex-col text-left">
+  <div id="about-me" class="home-section flex-col text-left">
     <div class="container flex flex-col mx-auto">
       <h1>
         Hi! I'm Lucas Pineda.

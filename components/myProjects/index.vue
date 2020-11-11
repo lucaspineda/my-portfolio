@@ -1,5 +1,5 @@
 <template>
-  <section class="my-work-section flex flex-col items-center justify-center">
+  <section id="my-projects" class="my-work-section flex flex-col items-center justify-center">
     <div class="container flex flex-col mx-auto">
       <div class="title-section-area">
         <h2 class="section-title">

@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-me-section flex flex-col items-center justify-center">
+  <section id="contact-me" class="contact-me-section flex flex-col items-center justify-center">
     <div class="title-section-area">
       <h2 class="section-title">
         Contact Me
