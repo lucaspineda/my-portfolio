@@ -12,21 +12,25 @@
         </p>
         <p class="mt-8">
           My skills are all related to the Front End Spectrum, and you can check it on
-          <a class="font-normal underline" href="#">my projects</a> section.
+          <scrollactive class="inline">
+            <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
+          </scrollactive>
           <!-- Besides that, knowing algorithms and a bit of data structures always helps
           me build better and cleaner code. -->
         </p>
         <p class="mt-8">
           Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
         </p>
-        <div class="checkout-my-work btn flex mx-auto">
-          <span>
-            My Work
-          </span>
-          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </div>
+        <scrollactive>
+          <a href="#my-projects" class="checkout-my-work btn flex mx-auto scrollactive-item">
+            <span>
+              My Work
+            </span>
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </scrollactive>
       </section>
     </div>
   </div>
@@ -50,6 +54,12 @@ export default class aboutMe extends Vue {
   font-family: var(--titles-font-family);
   padding: 0 2.2rem;
   background-color: var(--primary-color);
+
+}
+@media (min-width: 640px) {
+  .home-section {
+    padding-top: 4.4rem !important;
+  }
 }
 
 .home-section__body-content {

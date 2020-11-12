@@ -87,7 +87,7 @@ export default class ContactMe extends Vue {
 
 .section-title {
   font-size: 3.4rem;
-  margin: 4rem 0 8rem 0;
+  margin: 4rem 0 6rem 0;
 }
 
 .section-title::after {
