@@ -104,14 +104,12 @@ export default class MyProjects extends Vue {
   color: var(--primary-color);
   height: 52em;
   border-radius: 1em;
-  /* margin: 0 0 3em 0; */
   margin: 0 1em 3em 1em;
   padding-bottom: 2em;
   min-width: 25em;
 }
 
 .projects-card__project-image {
-  /* height: 100%; */
   width: auto;
   height: 26em;
   border-radius: 1em 1em 0 0;
@@ -136,7 +134,6 @@ export default class MyProjects extends Vue {
 }
 
 .tags-area {
-  /* max-width: 100px; */
   flex-wrap: wrap;
 }
 
@@ -150,7 +147,6 @@ export default class MyProjects extends Vue {
 
 .project-btn {
   font-size: 1.4em;
-  /* margin: 0 .4em; */
   margin: 0 auto;
   padding: .5em .8em;
   font-weight: 500;
@@ -162,10 +158,6 @@ export default class MyProjects extends Vue {
   width: 1.4em;
   height: 1.4em;
   margin: 0 .4em 0 0;
-}
-
-.teste {
-  min-width: 400px;
 }
 
 </style>
