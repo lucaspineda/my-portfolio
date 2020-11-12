@@ -7,9 +7,8 @@
     </div>
     <ContactImage />
     <div class="contacts-area flex flex-col">
-      <a class="contact-row flex items-center">
+      <a href="https://github.com/lucaspineda" class="contact-row flex items-center">
         <i class="fab fa-github mr-4 w-10 flex justify-center" />
-        <!-- <i class="fab fa-github"></i> -->
         <p>
           /lucaspineda
         </p>
