@@ -17,8 +17,7 @@ export default {
     //   if (to.hash) {
     //     return window.scrollTo({
     //       top: 0,
-    //       behavior: 'smooth',
-    //       selector: ''
+    //       behavior: 'smooth'
     //     })
     //   }
     //   return window.scrollTo({ top: 0, behavior: 'smooth' })
