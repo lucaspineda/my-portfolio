@@ -22,7 +22,7 @@
                 </span>
               </div>
               <div class="links-area flex justify-center h-full items-end">
-                <a href="#" class="project-btn flex rounded-lg">
+                <a v-if="project.srcCode" :href="project.srcCode" target="_blank" class="project-btn flex rounded-lg">
                   <div>
                     <svg class="project-btn__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -32,7 +32,7 @@
                     View code
                   </span>
                 </a>
-                <a href="#" class="project-btn flex rounded-lg">
+                <a v-if="project.demo" :href="project.demo" target="_blank" class="project-btn flex rounded-lg">
                   <svg class="project-btn__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>

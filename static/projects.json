@@ -3,7 +3,9 @@
     "title": "Stock Trader",
     "description": "Just a normal project with vuejs and firebase",
     "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "icon.png"
+    "image": "icon.png",
+    "srcCode": "https://github.com/lucaspineda/stock-trader",
+    "demo": "https://brave-kirch-83e7f4.netlify.app"
   },
   {
     "title": "Stock Trader",
