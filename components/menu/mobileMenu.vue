@@ -1,8 +1,10 @@
 <template>
   <nav class="mobile-menu flex items-center fixed w-full sm:hidden">
-    <div class="flex items-center justify-center rounded-full text-white name-avatar">
-      LP
-    </div>
+    <scrollactive>
+      <a href="#about-me" class="flex items-center justify-center rounded-full text-white name-avatar scrollactive-item">
+        LP
+      </a>
+    </scrollactive>
     <div class="nav-icons flex items-center">
       <scrollactive class="flex items-center" @itemchanged="onItemChanged">
         <a href="#about-me" class="scrollactive-item">
@@ -41,9 +43,10 @@ export default class MobileMenu extends Vue {
 </script>
 
 <style scoped>
-nav {
+nav.mobile-menu {
   background-color: var(--secondary-color);
   padding: 1rem;
+  z-index: 100;
 }
 
 .name-avatar {

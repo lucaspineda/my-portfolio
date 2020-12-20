@@ -1,6 +1,10 @@
 <template>
   <aside class="desktop-menu hidden fixed h-screen sm:flex flex-col items-center text-center uppercase">
-    <img class="profile-image" src="@/assets/img/me.jpeg" alt="My profile picture">
+    <scrollactive class="my-nav" @itemchanged="onItemChanged">
+      <a href="#about-me" class="scrollactive-item">
+        <img class="profile-image" src="@/assets/img/me.jpeg" alt="My profile picture">
+      </a>
+    </scrollactive>
     <nav class="navigation-menu">
       <ul class="navigation-menu__options-list">
         <scrollactive class="my-nav" @itemchanged="onItemChanged">
@@ -42,6 +46,8 @@ export default class DesktopMenu extends Vue {
   background-color: var(--secondary-color);
   width: 20rem;
   color: var(--tertiary-color);
+  font-family: var(--titles-font-family);
+  font-weight: 500;
 }
 
 .profile-image {
@@ -49,6 +55,7 @@ export default class DesktopMenu extends Vue {
   width: 10rem;
   border-radius: 100%;
   margin: 6rem 0 8rem 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .navigation-menu__options-list {
@@ -56,7 +63,12 @@ export default class DesktopMenu extends Vue {
 }
 
 .navigation-menu__options-list li{
-  margin: 0 0 .8rem 0;
+  margin: 0 0 1rem 0;
+  transition: all .2s;
+}
+
+.navigation-menu__options-list li:hover{
+  transform: translateY(-4px);
 }
 
 .navigation-menu__options-list li a:hover{

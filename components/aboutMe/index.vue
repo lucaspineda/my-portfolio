@@ -7,20 +7,22 @@
         I'm a Front End Developer.
       </h1>
       <section class="home-section__body-content">
-        <p>
-          I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
-        </p>
-        <p class="mt-8">
-          My skills are all related to the Front End Spectrum, and you can check it on
-          <scrollactive class="inline">
-            <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
-          </scrollactive>
-          <!-- Besides that, knowing algorithms and a bit of data structures always helps
-          me build better and cleaner code. -->
-        </p>
-        <p class="mt-8">
-          Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
-        </p>
+        <div class="about-me-text">
+          <p>
+            I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
+          </p>
+          <p class="mt-8">
+            My skills are all related to the Front End Spectrum, and you can check it on
+            <scrollactive class="inline">
+              <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
+            </scrollactive>
+            <!-- Besides that, knowing algorithms and a bit of data structures always helps
+            me build better and cleaner code. -->
+          </p>
+          <p class="mt-8">
+            Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
+          </p>
+        </div>
         <scrollactive>
           <a href="#my-projects" class="checkout-my-work btn flex mx-auto scrollactive-item">
             <span>
@@ -54,12 +56,18 @@ export default class aboutMe extends Vue {
   font-family: var(--titles-font-family);
   padding: 0 2.2rem;
   background-color: var(--primary-color);
-
 }
 @media (min-width: 640px) {
   .home-section {
     padding-top: 4.4rem !important;
   }
+}
+
+.home-section h1 {
+  /* animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; */
+  animation: moveInLeft 1s ease-in-out;
 }
 
 .home-section__body-content {
@@ -69,6 +77,10 @@ export default class aboutMe extends Vue {
   font-family: var(--body-font-family);
 }
 
+.about-me-text {
+  animation: moveInRight 1s ease-in-out;
+}
+
 .checkout-my-work.btn {
   font-size: 1.6rem;
   font-weight: 700;
@@ -76,9 +88,66 @@ export default class aboutMe extends Vue {
   margin: 3rem auto 4rem auto;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  transition: all .2s;
+  animation: moveInButton 1s ease-in-out;
+  box-shadow: 0 1px 20px rgba(255, 255, 255, 0.1);
+}
+
+.checkout-my-work.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 35px rgba(255, 255, 255, 0.1);
 }
 
 .checkout-my-work.btn span {
   margin-right: 1rem;
+}
+
+.checkout-my-work.btn:hover > svg {
+  transform: rotate(90deg);
+}
+
+.checkout-my-work.btn > svg {
+  transition: all .4s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+    }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 </style>

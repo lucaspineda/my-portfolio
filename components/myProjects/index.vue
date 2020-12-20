@@ -91,7 +91,7 @@ export default class MyProjects extends Vue {
 
 .section-title {
   font-size: 3.4rem;
-  margin: 4rem 0 8rem 0;
+  margin: 4rem 0 6rem 0;
 }
 
 .section-title::after {
@@ -114,8 +114,14 @@ export default class MyProjects extends Vue {
   border-radius: 1em;
   margin: 0 1em 3em 1em;
   padding-bottom: 2em;
-  /* min-width: 25em; */
   width: 30em;
+  transition: all .4s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.projects-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .projects-card__project-image {
@@ -154,6 +160,7 @@ export default class MyProjects extends Vue {
   padding: .4em .8em;
   margin: .4em .4em;
   border-radius: 2em;
+  cursor: default;
 }
 
 .project-btn {
@@ -170,5 +177,4 @@ export default class MyProjects extends Vue {
   height: 1.4em;
   margin: 0 .4em 0 0;
 }
-
 </style>
