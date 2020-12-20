@@ -7,21 +7,24 @@
         I'm a Front End Developer.
       </h1>
       <section class="home-section__body-content">
-        <div class="about-me-text">
-          <p>
-            I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
-          </p>
-          <p class="mt-8">
-            My skills are all related to the Front End Spectrum, and you can check it on
-            <scrollactive class="inline">
-              <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
-            </scrollactive>
-            <!-- Besides that, knowing algorithms and a bit of data structures always helps
-            me build better and cleaner code. -->
-          </p>
-          <p class="mt-8">
-            Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
-          </p>
+        <div class="flex flex-col lg:flex-row">
+          <div class="about-me-text">
+            <p>
+              I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
+            </p>
+            <p class="mt-8">
+              My skills are all related to the Front End Spectrum, and you can check it on
+              <scrollactive class="inline">
+                <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
+              </scrollactive>
+              <!-- Besides that, knowing algorithms and a bit of data structures always helps
+              me build better and cleaner code. -->
+            </p>
+            <p class="mt-8">
+              Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
+            </p>
+          </div>
+          <img class="my-work-img mx-auto mt-16 mb-4 lg:my-0" src="@/assets/img/my-work.svg" alt="">
         </div>
         <scrollactive>
           <a href="#my-projects" class="checkout-my-work btn flex mx-auto scrollactive-item">
@@ -59,15 +62,14 @@ export default class aboutMe extends Vue {
 }
 @media (min-width: 640px) {
   .home-section {
-    padding-top: 4.4rem !important;
+    padding-top: 2.4rem !important;
   }
 }
 
 .home-section h1 {
-  /* animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; */
   animation: moveInLeft 1s ease-in-out;
+  letter-spacing: 4px;
+  font-size: 4.5rem;
 }
 
 .home-section__body-content {
@@ -90,12 +92,12 @@ export default class aboutMe extends Vue {
   color: var(--secondary-color);
   transition: all .2s;
   animation: moveInButton 1s ease-in-out;
-  box-shadow: 0 1px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .checkout-my-work.btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1px 35px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .checkout-my-work.btn span {
@@ -108,6 +110,11 @@ export default class aboutMe extends Vue {
 
 .checkout-my-work.btn > svg {
   transition: all .4s;
+}
+
+.my-work-img {
+  width: 20rem;
+  /* margin: 6rem auto; */
 }
 
 @keyframes moveInLeft {

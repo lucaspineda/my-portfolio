@@ -45,9 +45,9 @@ export default class DesktopMenu extends Vue {
 .desktop-menu {
   background-color: var(--secondary-color);
   width: 20rem;
-  color: var(--tertiary-color);
+  color: #817F82;
   font-family: var(--titles-font-family);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .profile-image {
@@ -55,7 +55,13 @@ export default class DesktopMenu extends Vue {
   width: 10rem;
   border-radius: 100%;
   margin: 6rem 0 8rem 0;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 1rem rgba(255, 255, 255, 0.6);
+  transition: all .2s;
+}
+
+.profile-image:hover {
+  box-shadow: 0 2px 1rem rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
 }
 
 .navigation-menu__options-list {
@@ -72,7 +78,7 @@ export default class DesktopMenu extends Vue {
 }
 
 .navigation-menu__options-list li a:hover{
-  color: var(--senary-color);
+  color: var(--primary-color);
 }
 
 .is-active, .nuxt-link-exact-active {

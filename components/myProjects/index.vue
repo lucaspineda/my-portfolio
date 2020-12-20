@@ -78,8 +78,10 @@ export default class MyProjects extends Vue {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-size: 1em;
+}
 
-  @media (min-width: 1400px) {
+@media (min-width: 1400px) {
+  .my-work-section  {
     font-size: 1.2em
   }
 }
@@ -90,8 +92,10 @@ export default class MyProjects extends Vue {
 }
 
 .section-title {
-  font-size: 3.4rem;
+  font-size: 4.4rem;
   margin: 4rem 0 6rem 0;
+  font-weight: 700;
+  color: var(--secondary-color);
 }
 
 .section-title::after {
@@ -108,20 +112,20 @@ export default class MyProjects extends Vue {
 }
 
 .projects-card {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   height: 52em;
   border-radius: 1em;
   margin: 0 1em 3em 1em;
   padding-bottom: 2em;
   width: 30em;
   transition: all .4s;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .projects-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
 }
 
 .projects-card__project-image {
@@ -169,7 +173,7 @@ export default class MyProjects extends Vue {
   padding: .5em .8em;
   font-weight: 500;
   background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .project-btn__icon {

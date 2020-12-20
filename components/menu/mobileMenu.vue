@@ -1,7 +1,7 @@
 <template>
   <nav class="mobile-menu flex items-center fixed w-full sm:hidden">
     <scrollactive>
-      <a href="#about-me" class="flex items-center justify-center rounded-full text-white name-avatar scrollactive-item">
+      <a href="#about-me" class="name-avatar flex items-center justify-center rounded-full scrollactive-item">
         LP
       </a>
     </scrollactive>
@@ -51,6 +51,8 @@ nav.mobile-menu {
 
 .name-avatar {
   font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
   font-family: var(--body-font-family);
   width: 4rem;
   height: 4rem;

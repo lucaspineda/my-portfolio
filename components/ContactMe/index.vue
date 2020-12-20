@@ -76,7 +76,7 @@ export default class ContactMe extends Vue {
 .contact-me-section {
   padding: 0 1rem 2rem 1rem;
   background-color: var(--quintenary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .title-section-area {
@@ -85,13 +85,14 @@ export default class ContactMe extends Vue {
 }
 
 .section-title {
-  font-size: 3.4rem;
+  font-size: 4.4rem;
   margin: 4rem 0 6rem 0;
+  font-weight: 700;
 }
 
 .section-title::after {
   content: '';
-  border-bottom: .3rem solid var(--primary-color);
+  border-bottom: .3rem solid var(--secondary-color);
   display: flex;
   width: 50%;
   margin: .5rem auto 0 auto;
