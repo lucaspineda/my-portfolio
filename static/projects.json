@@ -1,28 +1,18 @@
 [
   {
     "title": "Stock Trader",
-    "description": "Just a normal project with vuejs and firebase",
+    "description": "This project is a stock market simulation, buy and sell stocks within days to see if you can become a millionaire :)",
     "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "icon.png",
+    "image": "stock-market.png",
     "srcCode": "https://github.com/lucaspineda/stock-trader",
     "demo": "https://brave-kirch-83e7f4.netlify.app"
   },
   {
-    "title": "Stock Trader",
-    "description": "Just a normal project with vuejs and firebase",
-    "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "icon.png"
-  },
-  {
-    "title": "Stock Trader",
-    "description": "Just a normal project with vuejs and firebase",
-    "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "icon.png"
-  },
-  {
-    "title": "Stock Trader",
-    "description": "Just a normal project with vuejs and firebase",
-    "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "icon.png"
+    "title": "Awesome Todo",
+    "description": "This project is a simple to use Todo App that helps people to easily and quickly create tasks to track.",
+    "tags": ["VueJs", "Firebase", "Quasar", "Responsive"],
+    "image": "todo-app-mini.png",
+    "srcCode": "https://github.com/lucaspineda/awesome-todo",
+    "demo": "https://awesome-todo-a2i68ncz8.vercel.app/"
   }
 ]

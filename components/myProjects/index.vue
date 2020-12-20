@@ -12,7 +12,9 @@
             <img class="projects-card__project-image" :src="require(`@/assets/img/${project.image}`)" :alt="`${project.title} image`">
             <div class="projects-card__separator" />
             <div class="project-info flex flex-col h-full">
-              <h4>{{ project.title }}</h4>
+              <h4 class="mb-4">
+                {{ project.title }}
+              </h4>
               <p class="project-description">
                 {{ project.description }}
               </p>
@@ -75,6 +77,11 @@ export default class MyProjects extends Vue {
   padding: 0 1rem 2rem 1rem;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
+  font-size: 1em;
+
+  @media (min-width: 1400px) {
+    font-size: 1.2em
+  }
 }
 
 .title-section-area {
@@ -96,7 +103,8 @@ export default class MyProjects extends Vue {
 }
 
 .cards-section {
-  max-width: 1024px;
+  width: 100%;
+  justify-content: center;
 }
 
 .projects-card {
@@ -106,13 +114,16 @@ export default class MyProjects extends Vue {
   border-radius: 1em;
   margin: 0 1em 3em 1em;
   padding-bottom: 2em;
-  min-width: 25em;
+  /* min-width: 25em; */
+  width: 30em;
 }
 
 .projects-card__project-image {
   width: auto;
   height: 26em;
   border-radius: 1em 1em 0 0;
+  object-fit: cover;
+  min-height: 20em;
 }
 
 .projects-card__separator {
