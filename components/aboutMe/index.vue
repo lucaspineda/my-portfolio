@@ -21,7 +21,7 @@
               me build better and cleaner code. -->
             </p>
             <p class="mt-8">
-              Teams with great communication skills, ambitious and positive people will always motivates me to give my best.
+              Teams with great communication skills, ambitious and positive people will always motivate me to give my best.
             </p>
           </div>
           <img class="my-work-img mx-auto mt-16 mb-4 lg:my-0" src="@/assets/img/my-work.svg" alt="">
