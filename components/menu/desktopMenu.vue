@@ -10,15 +10,15 @@
         <scrollactive class="my-nav" @itemchanged="onItemChanged">
           <li>
             <!-- <nuxt-link :to="{ path: '#about-me' }" class="scrollactive-item">About Me</nuxt-link> -->
-            <a href="#about-me" class="scrollactive-item">About Me</a>
+            <a href="#about-me" class="scrollactive-item block">About Me</a>
           </li>
           <li>
             <!-- <nuxt-link :to="{ path: '#my-projects' }" class="scrollactive-item">My Projects</nuxt-link> -->
-            <a href="#my-projects" class="scrollactive-item">My Projects</a>
+            <a href="#my-projects" class="scrollactive-item block">My Projects</a>
           </li>
           <li>
             <!-- <nuxt-link :to="{ path: '#contact-me' }" class="scrollactive-item">Contact</nuxt-link> -->
-            <a href="#contact-me" class="scrollactive-item">Contact</a>
+            <a href="#contact-me" class="scrollactive-item block">Contact</a>
           </li>
         </scrollactive>
       </ul>
@@ -70,15 +70,16 @@ export default class DesktopMenu extends Vue {
 
 .navigation-menu__options-list li{
   margin: 0 0 1rem 0;
-  transition: all .2s;
+  /* transition: all .2s; */
 }
 
-.navigation-menu__options-list li:hover{
-  transform: translateY(-4px);
+.navigation-menu__options-list li a{
+  transition: all .4s;
 }
 
 .navigation-menu__options-list li a:hover{
   color: var(--primary-color);
+  transform: translateY(-4px);
 }
 
 .is-active, .nuxt-link-exact-active {
