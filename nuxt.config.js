@@ -16,7 +16,7 @@ export default {
     // scrollBehavior (to) {
     //   if (to.hash) {
     //     return window.scrollTo({
-    //       top: 0,
+    //       top: 00,
     //       behavior: 'smooth'
     //     })
     //   }
