@@ -30,7 +30,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Lucas Pineda | Front End Developer' }
+      { hid: 'description', name: 'description', content: 'Remote Front End Developer for hire based in Sao Paulo' },
+      { name: 'msvalidate.01', content: '096A34C194625F23C154763C283DDD69' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
