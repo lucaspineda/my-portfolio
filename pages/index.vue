@@ -23,6 +23,21 @@ import { Vue, Component } from 'vue-property-decorator'
           hid: 'description',
           name: 'description',
           content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Lucas Pineda | Front End Developer'
+        },
+        {
+          hid: 'og:site_name',
+          name: 'og:site_name',
+          content: 'Lucas Pineda | Front End Developer'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
         }
       ]
     }
