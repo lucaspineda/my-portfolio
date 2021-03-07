@@ -38,6 +38,11 @@ import { Vue, Component } from 'vue-property-decorator'
           hid: 'og:description',
           name: 'og:description',
           content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: '@/assets/img/developer-logo.png'
         }
       ]
     }
