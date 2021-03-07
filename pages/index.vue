@@ -14,6 +14,18 @@ import { Vue, Component } from 'vue-property-decorator'
     HomeSection: () => import('@/components/aboutMe/index.vue'),
     MyProjects: () => import('@/components/myProjects/index.vue'),
     ContactMe: () => import('@/components/ContactMe/index.vue')
+  },
+  head () {
+    return {
+      title: this.$store.getters['browseJobs/HTMLPageTitle'] || 'Browse Jobs',
+      meta: [
+        {
+          hid: 'Lucas Pineda | Front End Developer',
+          name: 'description',
+          content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
+        }
+      ]
+    }
   }
 })
 
