@@ -17,10 +17,10 @@ import { Vue, Component } from 'vue-property-decorator'
   },
   head () {
     return {
-      title: this.$store.getters['browseJobs/HTMLPageTitle'] || 'Browse Jobs',
+      title: 'Lucas Pineda | Front End Developer',
       meta: [
         {
-          hid: 'Lucas Pineda | Front End Developer',
+          hid: 'description',
           name: 'description',
           content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
         }
