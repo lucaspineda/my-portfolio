@@ -17,7 +17,7 @@ import { Vue, Component } from 'vue-property-decorator'
   },
   head () {
     return {
-      title: 'Lucas Pineda | Front End Developer',
+      title: 'Lucass Pineda | Front End Developer',
       meta: [
         {
           hid: 'description',
@@ -40,9 +40,8 @@ import { Vue, Component } from 'vue-property-decorator'
           content: 'Remote Front End Developer For Hire Based in Sao Paulo.'
         },
         {
-          hid: 'og:image',
-          name: 'og:image',
-          content: '@/assets/img/developer-logo.png'
+          property: 'og:image',
+          content: 'assets/img/developer-logo.png'
         }
       ]
     }
