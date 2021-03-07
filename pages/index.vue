@@ -18,7 +18,7 @@ import { Vue, Component } from 'vue-property-decorator'
   },
   head () {
     return {
-      title: 'Lucass Pineda | Front End Developer',
+      title: 'Lucas Pineda | Front End Developer',
       meta: [
         {
           hid: 'description',
