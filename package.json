@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "export BUILD_MODE=dev && nuxt-ts",
-    "build": "export BUILD_MODE=prod && nuxt-ts build",
+    "dev": "set BUILD_MODE=dev && nuxt-ts",
+    "build": "set BUILD_MODE=prod && nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",

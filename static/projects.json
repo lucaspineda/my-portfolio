@@ -3,7 +3,7 @@
     "title": "Stock Trader",
     "description": "This project is a stock market simulation, buy and sell stocks within days to see if you can become a millionaire :)",
     "tags": ["VueJs", "Firebase", "Vuetify"],
-    "image": "stock-market.png",
+    "image": "stock-market.jpg",
     "srcCode": "https://github.com/lucaspineda/stock-trader",
     "demo": "https://brave-kirch-83e7f4.netlify.app"
   },
