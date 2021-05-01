@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "export BUILD_MODE=dev && nuxt-ts",
-    "build": "export BUILD_MODE=prod && nuxt-ts build",
+    "dev": "set BUILD_MODE=dev && nuxt-ts",
+    "build": "set BUILD_MODE=prod && nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
-    "@nuxtjs/eslint-config": "^4.0.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-config-typescript": "^4.0.0",
     "@nuxtjs/eslint-module": "^3.0.0",
     "@nuxtjs/tailwindcss": "^3.2.0",
