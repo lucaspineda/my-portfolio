@@ -67,7 +67,7 @@ export default class aboutMe extends Vue {
 }
 
 .home-section h1 {
-  animation: moveInLeft 1s ease-in-out;
+  /* animation: moveInLeft 1s ease-in-out; */
   letter-spacing: 4px;
   font-size: 4.5rem;
 }
@@ -80,7 +80,7 @@ export default class aboutMe extends Vue {
 }
 
 .about-me-text {
-  animation: moveInRight 1s ease-in-out;
+  /* animation: moveInRight 1s ease-in-out; */
 }
 
 .checkout-my-work.btn {
@@ -91,7 +91,7 @@ export default class aboutMe extends Vue {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transition: all .2s;
-  animation: moveInButton 1s ease-in-out;
+  /* animation: moveInButton 1s ease-in-out; */
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
