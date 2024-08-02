@@ -16,8 +16,8 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
-    "vue": "^2.6.12",
+    "nuxt": "^2.18.1",
+    "vue": "^2.7.12",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.0.2",
     "vue-scrollactive": "^0.9.3"
