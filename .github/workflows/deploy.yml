@@ -16,7 +16,11 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm run generate
+      - uses: actions/upload-artifact@v5
+        with:
+          name: github-pages
+          path: ./dist  # Replace with your output directory if different
       - uses: actions/deploy-pages@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          publish-dir: ./dist
+          publish-dir: ${{ secrets.ARTIFACTS_DIR }}  # Optional: Use uploaded artifact path
