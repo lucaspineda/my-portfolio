@@ -14,8 +14,7 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm run generate
-      - uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v4
         with:
-          provider: pages
           github-token: ${{ secrets.GITHUB_TOKEN }}
           publish-dir: ./dist
