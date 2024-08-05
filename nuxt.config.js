@@ -9,7 +9,7 @@ const baseUrlFunction = () => {
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: true,
+  ssr: false,
   target: 'static',
 
   router: {
