@@ -26,6 +26,7 @@
 body {
   font-size: 10px !important;
   font-family: var(--body-font-family: 'Roboto', sans-serif;);
+  /* font-family: var(--body-font-family: 'Lora', serif;); */
 }
 
 html {
@@ -51,6 +52,13 @@ html {
 
 :root {
   /* Colors */
+  /* --primary-color: #0c243c;
+  --secondary-color: #EBF2FA;
+  --tertiary-color: #7798ab;
+  --quartenary-color: #59ffa0;
+  --quintenary-color: #c3dbc5;
+  --senary-color: #030A11; */
+
   --primary-color: #EBF2FA;
   --secondary-color: #0c243c;
   --tertiary-color: #D3DAD8;
@@ -59,7 +67,9 @@ html {
   --senary-color: #030A11;
 
   /* Typography */
+  /* --titles-font-family: 'Domine', serif; */
   --titles-font-family: 'Lora', serif;
+  /* --body-font-family: 'Roboto', sans-serif; */
   --body-font-family: 'Merriweather', serif;
 }
 

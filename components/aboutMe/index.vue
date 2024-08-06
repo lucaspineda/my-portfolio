@@ -10,10 +10,10 @@
         <div class="flex flex-col lg:flex-row">
           <div class="about-me-text">
             <p>
-              I’m a Front End Developer, Computer Scientist, and problem solver based in São Paulo.
+              I’m a Front End Developer, Computer Scientist and a problem solver based in São Paulo.
             </p>
             <p class="mt-8">
-              My skills are all related to the Front End Spectrum, and you can check them in
+              My skills are all related to the Front End Spectrum, and you can check it on
               <scrollactive class="inline">
                 <a class="font-normal underline scrollactive-item" href="#my-projects">my projects</a> section.
               </scrollactive>
